@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../CSS/responsive/responsive.css" />
+        <link rel="stylesheet" href="../CSS/header.css" />
+        <link rel="stylesheet" href="../CSS/style.css" />
+        <link rel="stylesheet" href="../CSS/inscriptionConnexion.css" />
+        <link rel="stylesheet" href="../CSS/footer.css" />
+
+        <title>SIGNIN</title>
+    </head>
+    <body>
+        <section class="background-signup">
+            <div class="top">
+                <a href="homepage.html">
+                    <div class="chevron">
+                        <img
+                            src="../img/chevron_left_FILL0_wght400_GRAD0_opsz48.svg"
+                            alt=""
+                        />
+                    </div>
+                </a>
+                <a href="homepage.html">
+                    <img class="logo-signup" src="../img/LOGOHP.png" alt="" />
+                </a>
+                <div class="empty"></div>
+            </div>
+            <section class="form-signup">
+                <div class="title-signup">
+                    <hr class="line-top-signup" />
+                    <h1>Connexion</h1>
+                    <hr class="line-top-signup" />
+                </div>
+                <div class="paragraph-top-signup">
+                    <p>
+                        Ouvrez des packs et échangez avec d’autres personnes en
+                        vous connectant
+                    </p>
+                </div>
+                <form class="form2" action="" method="post">
+                    <div class="form-container">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            name="Mail"
+                            id="Mail"
+                            placeholder="Votre email"
+                        />
+                    </div>
+
+                    <div class="form-container">
+                        <label for="password">Mot de passe</label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="Mot de passe"
+                            placeholder="Mot de passe"
+                        />
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" />
+                        <p>Rester connecté</p>
+                    </div>
+                    <input class="signup" type="submit" value="Se connecter" />
+                </form>
+                <div class="message-error">
+                    <ul></ul>
+                </div>
+                <hr />
+                <p>Vous n'avez pas de compte ?</p>
+                <a href="inscription.html" rel="noopener noreferrer">
+                    S'inscrire</a
+                >
+            </section>
+        </section>
+
+        <script src="../JS/authentification/connexion.js"></script>
+        <script src="../JS/authentification/localStorage.js"></script>
+        <script src="../JS/authentification/script.js"></script>
+    </body>
+</html>

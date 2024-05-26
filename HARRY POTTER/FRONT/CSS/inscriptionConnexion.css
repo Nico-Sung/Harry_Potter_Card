@@ -1,0 +1,126 @@
+/******* SIGN UP *******/
+
+.background-signup {
+    background: url(../img/backgroundSignUp.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background-signup .top {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.form-signup {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 24%;
+}
+
+.title-signup {
+    display: flex;
+    align-items: center;
+}
+
+.logo-signup {
+    width: 200px;
+}
+
+h1 {
+    font-size: 28px;
+    color: white;
+}
+
+.line-top-signup {
+    border: 0;
+    border-top: 1px solid white;
+    width: 100px;
+    margin: 0px 16px 0;
+}
+
+.paragraph-top-signup p {
+    color: white;
+    width: auto;
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    height: 64px;
+    margin: 0 0 16px 0;
+}
+
+.form-container input {
+    height: 100px;
+    background-color: #151923;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 0 0 0 8px;
+}
+
+.form-container label {
+    margin-bottom: 8px;
+}
+
+form {
+    width: -webkit-fill-available;
+    margin-top: 16px;
+}
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+}
+
+.terms p {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+form .signup {
+    border-radius: 16px;
+    height: 48px;
+    width: 100%;
+    background-color: #6b62b5;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.form-signup hr {
+    width: 100px;
+    margin: 22px;
+    border: 0.2px solid gray;
+}
+
+.form-signup a {
+    margin-top: 8px;
+    text-decoration: underline;
+}
+
+.message-error {
+    display: none;
+    margin-top: 20px;
+}
+
+.message-error ul {
+    list-style-type: none;
+}
+
+.message-error.visible {
+    display: block;
+    background-color: red;
+    padding: 16px;
+    border-radius: 10px;
+}

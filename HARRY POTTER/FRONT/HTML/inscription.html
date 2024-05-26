@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../CSS/header.css" />
+        <link rel="stylesheet" href="../CSS/style.css" />
+        <link rel="stylesheet" href="../CSS/inscriptionConnexion.css" />
+        <link rel="stylesheet" href="../CSS/footer.css" />
+        <link rel="stylesheet" href="../CSS/responsive/responsive.css" />
+
+        <title>SIGNUP</title>
+    </head>
+    <body>
+        <section class="background-signup">
+            <div class="top">
+                <a href="homepage.html">
+                    <div class="chevron">
+                        <img
+                            src="../img/chevron_left_FILL0_wght400_GRAD0_opsz48.svg"
+                            alt=""
+                        />
+                    </div>
+                </a>
+                <a href="homepage.html">
+                    <img class="logo-signup" src="../img/LOGOHP.png" alt="" />
+                </a>
+                <div class="empty"></div>
+            </div>
+            <section class="form-signup">
+                <div class="title-signup">
+                    <hr class="line-top-signup" />
+                    <h1>S'inscrire</h1>
+                    <hr class="line-top-signup" />
+                </div>
+                <div class="paragraph-top-signup">
+                    <p>
+                        Ouvrez des packs et échangez aves d’autres personnes en
+                        vous inscrivant
+                    </p>
+                </div>
+                <form class="form1" action="" method="post">
+                    <div class="form-container">
+                        <label for="username">Pseudonyme</label>
+                        <input
+                            type="username"
+                            name="username"
+                            id="Name"
+                            placeholder="Votre pseudonyme"
+                        />
+                    </div>
+                    <div class="form-container">
+                        <label for="mail">Adresse mail</label>
+                        <input
+                            type="email"
+                            name="mail"
+                            id="Mail"
+                            placeholder="Votre adresse mail"
+                        />
+                    </div>
+                    <div class="form-container">
+                        <label for="password">Mot de passe</label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="Mot de passe"
+                            placeholder="Mot de passe"
+                        />
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" required />
+                        <p>
+                            En poursuivant, vous acceptez nos conditions
+                            d'utilisation et reconnaissez notre politique de
+                            confidentialité.
+                        </p>
+                    </div>
+                    <input class="signup" type="submit" value="S'inscrire" />
+                </form>
+                <div class="message-error">
+                    <ul></ul>
+                </div>
+                <hr />
+                <p>Vous avez déjà un compte ?</p>
+                <a href="seConnecter.html" rel="noopener noreferrer">
+                    Se connecter</a
+                >
+            </section>
+        </section>
+        <script src="../JS/authentification/inscription.js"></script>
+        <script src="../JS/authentification/script.js"></script>
+    </body>
+</html>

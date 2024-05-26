@@ -1,0 +1,151 @@
+body {
+    background: linear-gradient(-45deg, #0b1824, #02101e, #1b1b1b, #181818);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100%;
+    background-color: #0b1824;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#houseFilter {
+    color: white;
+    height: 26px;
+    width: 200px;
+    font-size: 16px;
+    background-color: #7b0000;
+    border: 0;
+    padding-left: 8px;
+}
+
+.searchh {
+    height: 26px;
+    width: 200px;
+    color: black;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.collection-container .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 28px 0;
+}
+
+.collection-container .top hr {
+    width: 100%;
+}
+
+.collection-container .mid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collection-container .mid .card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-bottom: 24px;
+}
+
+.collection-container .mid .card a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0px 0px 15px rgba(153, 153, 153, 0.943);
+    }
+    50% {
+        box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.668);
+    }
+    100% {
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.522);
+    }
+}
+
+@keyframes sparkle {
+    0% {
+        box-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0px 0px 30px #fff,
+            0px 0px 40px #06485c;
+    }
+    100% {
+        box-shadow: 0px 0px 20px #fff, 0px 0px 30px #fff, 0px 0px 40px #06485c,
+            0px 0px 50px #06485c, 0px 0px 60px #06485c;
+    }
+}
+
+.card .card-img:hover {
+    animation: scaleUp 0.3s ease forwards, shadowAnimation 1s infinite alternate,
+        sparkle 0.5s infinite alternate;
+}
+.card-name {
+    margin: 16px;
+    font-size: 26px;
+}
+
+.card .card-img {
+    width: 140%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 370px;
+    border-radius: 10px;
+}
+
+.card-name-container {
+    display: flex;
+}
+
+.like-button {
+    display: block;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #7b0000;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.like-button:hover {
+    background-color: #e17878;
+}
+
+.like-button.favorited {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}

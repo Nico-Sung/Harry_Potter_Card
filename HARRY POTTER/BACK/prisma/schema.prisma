@@ -1,0 +1,40 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  password String
+  nextBoosterTime   String   @default("0") //temps pour prochain booster
+  userCards InventoryCards[]  //les cartes de l'utilisateur  (son inventaire), l'utilisateur possède plusieurs cartes mais une carte peut être possédée par plusieurs utilisateurs
+}
+
+model Card {
+  id        Int     @id @default(autoincrement()) //id de la carte
+  name      String  //nom de la carte
+  imageUrl  String  //url de l'image de la carte
+  house     String? //maison de la carte mais pas obligatoire
+  userCards InventoryCards[] //les utilisateurs qui possèdent cette carte, une carte peut être possédée par plusieurs utilisateurs
+}
+
+model InventoryCards {
+  id       Int    @id @default(autoincrement()) //id de l'inventaire
+  userId Int //id de l'utilisateur
+  user   User  @relation(fields: [userId], references: [id]) //relation avec l'utilisateur 
+  cardId Int //id de la carte
+  card   Card  @relation(fields: [cardId], references: [id]) //relation avec la carte
+  quantity Int //quantité de la carte
+} 

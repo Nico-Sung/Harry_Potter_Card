@@ -1,0 +1,24 @@
+@media only screen and (max-width: 768px) {
+    #image {
+        height: 380px;
+    }
+    .info {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .container-details .left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .left .right {
+        margin-bottom: 108px;
+    }
+
+    .background {
+        width: 149vw;
+    }
+}

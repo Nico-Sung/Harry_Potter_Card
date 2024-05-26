@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mon Compte - Collection de Cartes Harry Potter</title>
+        <link rel="stylesheet" href="../CSS/header.css" />
+        <link rel="stylesheet" href="../CSS/style.css" />
+        <link rel="stylesheet" href="../CSS/compte.css" />
+        <link rel="stylesheet" href="../CSS/footer.css" />
+        <link rel="stylesheet" href="../CSS/responsive/responsive.css" />
+        <link rel="stylesheet" href="../CSS/responsive/responsive-profile.css">
+
+
+    </head>
+    <body>
+        <section class="background">
+            <nav class="navbar">
+                <div class="menus">
+                    <h1 class="menu">Menu</h1>
+                    <div class="dropdown-content">
+                        <a href="collection.html">Collection</a>
+                        <a href="#">Echange</a>
+                        <a href="booster.html">Boosters</a>
+                    </div>
+                    <img
+                        class="chevron"
+                        src="../img/chevron_right_FILL0_wght400_GRAD0_opsz48.svg"
+                        alt="chevron"
+                    />
+                </div>
+                <div class="logo">
+                    <a href="homepage2.html">
+                        <img
+                            class="img-logo"
+                            src="../img/LOGOHP.png"
+                            alt="logo"
+                        />
+                    </a>
+                </div>
+                <div class="right-nav">
+                   
+                    <div class="btn-login">
+                        <a href="monCompte.html">
+                            <button class="custom-btn login">Mon compte</button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <section class="wrapper">
+                <section class="container-account">
+                    <section class="left">
+                        <div class="top">
+                            <h1>Informations du compte</h1>
+                            <div class="info">
+                                <div class="info-container">
+                                    <h1>
+                                        Nom d'utilisateur :
+                                        <span id="name"> </span>
+                                    </h1>
+                                </div>
+                                <div class="info-container">
+                                    <h1>Email : <span id="mail"> </span></h1>
+                                </div>
+                                <div class="info-container">
+                                    <h1>Mot de passe : <span id="password"> ******* </span><h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <h1 class="update">Modifier les informations du compte</h1>
+                            <div class="info">
+                                <div class="info-container">
+                                    <a class="modify-pseudo" href=""
+                                        ><h1>Modifier le pseudonyme</h1></a
+                                    >
+                                </div>
+                                <div class="info-container">
+                                    <a class="modify-mail" href=""><h1>Modifier l'email</h1></a>
+                                </div>
+                                <div class="info-container">
+                                    <a class="modify-mdp" href=""
+                                        ><h1>Modifier le mot de passe</h1></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mid">
+                        <h1>Mon compte</h1>
+                        <div class="bot">
+                            <a href="homepage.html">Se deconnecter</a>
+                        </div>
+                    </section>
+                    <section class="right">
+                        <div class="top">
+                            <h1>Stats du compte</h1>
+                            <a href="">Cliquez ici pour en savoir plus</a>
+                        </div>
+                        <div class="middle">
+                            <h1>Historique des transactions</h1>
+                            <a href="">Cliquez ici pour en savoir plus</a>
+                        </div>
+                        <div class="bot"></div>
+                    </section>
+                </section>
+                <div class="title-collection">
+                    <h1>Votre collection</h1>
+                </div>
+                <section class="collection-container">
+                    <div class="mid"></div>
+                </section>
+            </section>
+
+            <footer>
+                <div class="footer">
+                    <div class="top-footer">
+                        <div class="left">
+                            <a href target="_blank" rel="noopener noreferrer"
+                                >A propos de nous</a
+                            >
+                            <a href target="_blank" rel="noopener noreferrer"
+                                >Nous contacter</a
+                            >
+                        </div>
+                        <div class="mid">
+                            <a target="_blank" rel="noopener noreferrer"
+                                >Conditions d'utilisation générale</a
+                            >
+                            <a target="_blank" rel="noopener noreferrer">FAQ</a>
+                        </div>
+                        <div class="empty"></div>
+                        <a href="homepage2.html">
+                            <img src="../img/LOGOHP.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="mid-footer">
+                        <hr />
+                    </div>
+                    <div class="bot-footer">
+                        <div class="socials">
+                            <a href="">
+                                <div class="circle">
+                                    <img src="../img/x.webp" alt="" />
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="circle">
+                                    <img src="../img/facebook.svg" alt="" />
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="circle">
+                                    <img
+                                        src="../img/1200px-Instagram.svg.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="circle">
+                                    <img src="../img/youtube.svg" alt="" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <button id="floating-button">Échanger des cartes</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="exchange-form">
+                        <div>
+                            <label for="person">Personne:</label><br>
+                            <input type="text" id="person" name="person"><br>
+                        </div>
+                        <div>
+                            <label for="card">Carte:</label><br>
+                            <input type="text" id="card" name="card"><br>
+                        </div>
+                        <input type="submit" value="Échanger">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="../JS/page-profile/my-collection.js"></script>
+        <script src="../JS/page-profile/profile.js"></script>
+        <script src="../JS/page-profile/update.js"></script>
+        <script src="../JS/page-profile/modal.js"></script>
+    </body>
+</html>

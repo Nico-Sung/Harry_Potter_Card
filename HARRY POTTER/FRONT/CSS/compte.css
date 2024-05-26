@@ -1,0 +1,288 @@
+/* monCompte */
+
+.container-account {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 3px solid #191e2a;
+    background-color: #151923;
+    margin-top: 20px;
+}
+
+.container-account .left,
+.container-account .right {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    border: 2px solid #191e2a;
+    padding: 20px;
+    height: 380px;
+    justify-content: space-between;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.container-account .mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+    justify-content: space-evenly;
+}
+
+.container-account .mid .bot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-account .left h1,
+.container-account .right h1,
+.collection-container h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.container-account .mid h1 {
+    font-size: 40px;
+}
+
+.container-account .empty {
+    height: 10vw;
+}
+
+.container-account .left .top {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.container-account .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-account .info-container {
+    display: flex;
+}
+
+.container-account .info-container h1 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.container-account .top a,
+.container-account .middle a {
+    text-decoration: underline;
+}
+
+.title-collection {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-account .mid .bot a {
+    text-decoration: underline;
+}
+
+#floating-button {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #008cba; /* Bleu */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#floating-button:hover {
+    animation: pulse 2s infinite;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #151923;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#exchange-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#exchange-form #person,
+#card {
+    color: black;
+}
+
+#exchange-form input {
+    color: black;
+}
+
+.card .card-img {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 370px;
+    border-radius: 10px;
+}
+
+.collection-container .mid .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 24px;
+}
+
+.collection-container .mid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-name {
+    margin: 16px;
+    font-size: 26px;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0px 0px 15px rgba(153, 153, 153, 0.943);
+    }
+    50% {
+        box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.668);
+    }
+    100% {
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.522);
+    }
+}
+
+@keyframes sparkle {
+    0% {
+        box-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0px 0px 30px #fff,
+            0px 0px 40px #06485c;
+    }
+    100% {
+        box-shadow: 0px 0px 20px #fff, 0px 0px 30px #fff, 0px 0px 40px #06485c,
+            0px 0px 50px #06485c, 0px 0px 60px #06485c;
+    }
+}
+
+.card .card-img:hover {
+    animation: scaleUp 0.3s ease forwards, shadowAnimation 1s infinite alternate,
+        sparkle 0.5s infinite alternate;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#form-modify-pseudo,
+#form-modify-mail,
+#form-modify-mdp {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-modify-pseudo button,
+#form-modify-mail button,
+#form-modify-mdp button {
+    margin-left: 10px;
+    background-color: #151923;
+}
+
+#form-modify-pseudo label,
+#form-modify-mail label,
+#form-modify-mdp label {
+    margin-right: 10px;
+}
+
+#form-modify-pseudo input,
+#form-modify-mail input,
+#form-modify-mdp input {
+    color: #000;
+}

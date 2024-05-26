@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Collection</title>
+        <link rel="stylesheet" href="../CSS/header.css" />
+        <link rel="stylesheet" href="../CSS/style.css" />
+        <link rel="stylesheet" href="../CSS/collection.css" />
+        <link rel="stylesheet" href="../CSS/footer.css" />
+        <link rel="stylesheet" href="../CSS/responsive/responsive.css" />
+    </head>
+    <body>
+        <section class="background">
+            <nav class="navbar">
+                <div class="menus">
+                    <h1 class="menu">Menu</h1>
+                    <div class="dropdown-content">
+                        <a href="collection.html">Collection</a>
+                        <a href="#">Echange</a>
+                        <a href="booster.html">Boosters</a>
+                    </div>
+                    <img
+                        class="chevron"
+                        src="../img/chevron_right_FILL0_wght400_GRAD0_opsz48.svg"
+                        alt="chevron"
+                    />
+                </div>
+                <div class="logo">
+                    <a href="homepage2.html">
+                        <img
+                            class="img-logo"
+                            src="../img/LOGOHP.png"
+                            alt="logo"
+                        />
+                    </a>
+                </div>
+                <div class="right-nav">
+                    <div class="btn-login">
+                        <a href="monCompte.html">
+                            <button class="custom-btn login">Mon compte</button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <section class="wrapper">
+                <section class="collection-container">
+                    <div class="top">
+                        <hr />
+                        <h1>Liste des cartes Harry Potter</h1>
+                        <hr />
+                    </div>
+                    <div class="between">
+                        <input
+                            class="searchh"
+                            placeholder="Rechercher une carte"
+                            type="text"
+                        />
+                        <select id="houseFilter">
+                            <option value="all">Toutes les maisons</option>
+                            <option value="Gryffindor">Gryffindor</option>
+                            <option value="Hufflepuff">Hufflepuff</option>
+                            <option value="Ravenclaw">Ravenclaw</option>
+                            <option value="Slytherin">Slytherin</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
+                    <div class="mid"></div>
+                </section>
+            </section>
+
+            <footer>
+                <div class="footer">
+                    <div class="top-footer">
+                        <div class="left">
+                            <a href target="_blank" rel="noopener noreferrer"
+                                >A propos de nous</a
+                            >
+                            <a href target="_blank" rel="noopener noreferrer"
+                                >Nous contacter</a
+                            >
+                        </div>
+                        <div class="mid">
+                            <a target="_blank" rel="noopener noreferrer"
+                                >Conditions d'utilisation générale</a
+                            >
+                            <a target="_blank" rel="noopener noreferrer">FAQ</a>
+                        </div>
+                        <div class="empty"></div>
+                        <a href="homepage2@.html">
+                            <img src="../img/LOGOHP.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="mid-footer">
+                        <hr />
+                    </div>
+                    <div class="bot-footer">
+                        <div class="socials">
+                            <a href="">
+                                <div class="circle">
+                                    <img src="../img/x.webp" alt="" />
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="circle">
+                                    <img src="../img/facebook.svg" alt="" />
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="circle">
+                                    <img
+                                        src="../img/1200px-Instagram.svg.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="circle">
+                                    <img src="../img/youtube.svg" alt="" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <script src="../JS/collection/main.js"></script>
+        <script src="../JS/collection/houseFilter.js"></script>
+        <script src="../JS/search-bar/searchBar.js"></script>
+        <script src="../JS/booster/localStorage.js"></script>
+    </body>
+</html>

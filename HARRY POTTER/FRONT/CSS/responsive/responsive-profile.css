@@ -1,0 +1,16 @@
+@media only screen and (max-width: 768px) {
+    .container-account {
+        height: 500px;
+    }
+
+    .mid h1 {
+        display: flex;
+        font-size: 38px !important;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .update {
+        margin-top: 45px !important;
+    }
+}
